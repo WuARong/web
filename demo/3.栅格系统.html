@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--设置这个文本的语言 中文-->
+<html lang="zh-CN">
+<head>
+    <!--设置文件编码-->
+    <meta charset="utf-8">
+    <!--是设置当前浏览器的渲染模式   兼容模式 IE 兼容模式的选择  用IE的最新的渲染引擎来选-->
+    <!--meta:compat-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+    目的：设置viewport宽度和设备的宽度一致，缩放比和pc上一致，不允许用户缩放
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable = 0">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!--link:favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!--引用核心bootstrap css文件-->
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--放我们自己的ccs文件-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--条件注释 当浏览器小于IE9的时候加载里面两端代码-->
+    <!--html5shiv.min.js  就是当我们的浏览器不兼容 html5 的标签的时候  把我们的标签解释正确-->
+    <!--respond.min.js 当我们浏览器不支持媒体查询的时候  来达到响应的目的-->
+    <!--为什么要放在这里？？？？    预先加载来解释网页内容-->
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+        }
+        .container > .row > div{
+            height: 50px;
+            background: red;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 col-sm-6">1</div>
+        <div class="col-xs-4 col-sm-6">2</div>
+        <div class="col-xs-4 col-sm-6 hidden-xs hidden-sm hidden-md">3</div>
+    </div>
+</div>
+
+
+
+<!--必须先引入jquery-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<!--再引入bootstrap-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<!--自己的js-->
+</body>

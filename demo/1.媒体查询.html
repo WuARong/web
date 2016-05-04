@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+    媒体查询在响应式当中的应用  通过  screen  来做查询内容的 方式
+    @media
+    默认的是查询的屏幕
+    -->
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;
+        }
+        div.container{
+            width: 100%;
+            height: 1000px;
+            background: red;
+            margin: 0 auto;
+        }
+
+
+        /*
+        1. 0 - 768px  100%
+        2. 768px - 992px 750px
+        3. 992px - 1190px 980px
+        4.1190px -  1170px
+        */
+        /*
+        @media (min-width max-width){}
+        */
+        @media screen and (min-width: 768px){
+            div.container{
+                width: 750px;
+            }
+        }
+
+        @media screen and (min-width: 992px){
+            div.container{
+                width: 980px;
+            }
+        }
+
+        @media screen and (min-width: 1190px){
+            div.container{
+                width: 1170px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

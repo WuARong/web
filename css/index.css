@@ -1,0 +1,668 @@
+/*-----------------公用css-----------------------------*/
+body{
+    font-family:'Microsoft YaHei',sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+a{
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #E92322;
+}
+.wjs_red{
+    color: #E92322;
+}
+@font-face {
+    /*字体名称*/
+    font-family: 'itcast';
+    /*引入字体文件*//*定义这个文件的格式*/
+    src: url(../font/MiFie-Web-Font.svg) format('svg'),
+    url(../font/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../font/MiFie-Web-Font.ttf) format('truetype'),
+    url(../font/MiFie-Web-Font.woff) format('woff');
+}
+/*字体图标*/
+.wjs_icon{
+    font-family: itcast;
+}
+/*图标*/
+.wjs_icon_phone::before{
+    /*定义字体编码*/
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    /*定义字体编码*/
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    /*定义字体编码*/
+    content: "\e920";
+}
+.wjs_icon_wjs::before{
+    /*定义字体编码*/
+    content: "\e93e";
+}
+.wjs_icon_uniE907::before{
+    content: "\e907";
+}
+.wjs_icon_uniE903::before{
+    content: "\e903";
+}
+.wjs_icon_uniE901::before{
+    content: "\e901";
+}
+.wjs_icon_uniE900::before{
+    content: "\e900";
+}
+.wjs_icon_uniE904::before{
+    content: "\e904";
+}
+.wjs_icon_uniE902::before{
+    content: "\e902";
+}
+.wjs_icon_uniE906::before{
+    content: "\e906";
+}
+.wjs_icon_uniE905::before{
+    content: "\e905";
+}
+/*
+为了方便试用 能语义字体图标
+*/
+.wjs_font16{
+    font-size: 16px;
+}
+.wjs_font20{
+    font-size: 20px;
+}
+.wjs_font24{
+    font-size: 24px;
+}
+.wjs_font28{
+    font-size: 28px;
+}
+.wjs_mr20{
+    margin-right: 20px;
+}
+.wjs_ml20{
+    margin-left: 20px;
+}
+.wjs_mr10{
+    margin-right: 10px;
+}
+.wjs_ml10{
+    margin-left: 10px;
+}
+
+/*------------------页面模块--------------------------------*/
+
+
+
+
+/*topBar*/
+.wjs_topBar{
+    border-bottom: 1px solid #ccc;
+    color: #888;
+}
+.wjs_topBar > .container{
+    height: 40px;
+}
+.wjs_topBar > .container >.row{
+
+}
+.wjs_topBar > .container >.row > div{
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+}
+/*选择下一个兄弟元素*/
+.wjs_topBar > .container >.row > div + div{
+    border-left: 1px solid #ccc;
+}
+.wjs_topBar > .container >.row > div:nth-child(3) > a{
+    color: #888;
+}
+.wjs_topBar > .container >.row > div:nth-child(3) > a:hover{
+    color: #888;
+    text-decoration: none;
+}
+
+/*按钮  自定义按钮*/
+/*把class名称改成自定义的*/
+.btn-register {
+    color: #333;
+    background-color: #E92322;
+    border:none;
+    color: #fff;
+}
+.btn-register:focus,
+.btn-register.focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-register:hover {
+    color: #fff;
+    background-color: #E92322;
+    border-color: #adadad;
+}
+.btn-register:active,
+.btn-register.active,
+.open > .dropdown-toggle.btn-register {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-register:active:hover,
+.btn-register.active:hover,
+.open > .dropdown-toggle.btn-register:hover,
+.btn-register:active:focus,
+.btn-register.active:focus,
+.open > .dropdown-toggle.btn-register:focus,
+.btn-register:active.focus,
+.btn-register.active.focus,
+.open > .dropdown-toggle.btn-register.focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.btn-register:active,
+.btn-register.active,
+.open > .dropdown-toggle.btn-register {
+    background-image: none;
+}
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled.focus,
+.btn-register[disabled].focus,
+fieldset[disabled] .btn-register.focus {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-register .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+/*登录按钮*/
+.wjs_topBar > .container >.row .btn-link{
+    color: #888;
+    font-size: 12px;
+}
+.wjs_topBar > .container >.row .btn-link:hover{
+    color: #888;
+    text-decoration: none;
+}
+
+/*导航条*/
+.navbar-wjs {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+.navbar-wjs .navbar-brand {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+}
+/*定义字体*/
+.navbar-wjs .navbar-brand > .wjs_icon_logo{
+    font-size: 50px;
+    color: #E92322;
+    vertical-align: middle;
+}
+.navbar-wjs .navbar-brand > .wjs_icon_wjs{
+    font-size: 36px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.navbar-wjs .navbar-brand:hover,
+.navbar-wjs .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-wjs .navbar-text {
+    color: #777;
+}
+.navbar-wjs .navbar-nav > li > a {
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+    font-size: 14px;
+}
+.navbar-wjs .navbar-nav > li > a:hover,
+.navbar-wjs .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #E92322;
+}
+.navbar-wjs .navbar-nav > .active > a,
+.navbar-wjs .navbar-nav > .active > a:hover,
+.navbar-wjs .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 2px solid #E92322;
+}
+.navbar-wjs .navbar-nav > .disabled > a,
+.navbar-wjs .navbar-nav > .disabled > a:hover,
+.navbar-wjs .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-wjs .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.navbar-wjs .navbar-toggle:hover,
+.navbar-wjs .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-wjs .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-wjs .navbar-collapse,
+.navbar-wjs .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-wjs .navbar-nav > .open > a,
+.navbar-wjs .navbar-nav > .open > a:hover,
+.navbar-wjs .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-wjs .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-wjs .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-wjs .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-wjs .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-wjs .navbar-link {
+    color: #777;
+}
+.navbar-wjs .navbar-link:hover {
+    color: #333;
+}
+.navbar-wjs .btn-link {
+    color: #777;
+}
+.navbar-wjs .btn-link:hover,
+.navbar-wjs .btn-link:focus {
+    color: #333;
+}
+.navbar-wjs .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-wjs .btn-link:hover,
+.navbar-wjs .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-wjs .btn-link:focus {
+    color: #ccc;
+}
+
+
+/*轮播图*/
+#wjs_banner{
+
+}
+/*PC*/
+#wjs_banner .carousel-inner > div.item > a.img_box{
+    /*需要背景图原比例显示 并且居中在屏幕当中*/
+    background: url("../images/slide_01_2000x410.jpg") no-repeat;
+    background-position: center center;
+    height: 410px;
+    display: block;
+}
+/*M  a 宽度需要100% img 宽度100%*/
+#wjs_banner .carousel-inner > div.item > a.img_mobile{
+    width: 100%;
+    display: block;
+}
+#wjs_banner .carousel-inner > div.item > a.img_mobile img{
+    width: 100%;
+    display: block;
+}
+
+
+/*网站特色*/
+#wjs_feature{
+    padding: 50px 0;
+    border-bottom: 1px solid #ccc;
+}
+#wjs_feature .container{
+    max-width: 910px;
+}
+#wjs_feature .container a{
+    color: #333;
+}
+#wjs_feature .container a:hover{
+    color: #E92322;
+    text-decoration: none;
+}
+#wjs_feature .media{
+    padding: 15px 0;
+}
+#wjs_feature .media > .media-left{
+    font-size: 30px;
+}
+#wjs_feature .media > .media-body h4{
+    font-size: 18px;
+}
+#wjs_feature .media > .media-body p{
+    font-size: 14px;
+}
+
+/*预约*/
+#wjs_book{
+    font-size: 14px;
+    padding: 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+#wjs_book .container{
+    max-width: 910px;
+}
+#wjs_book > .container{
+    max-width: 910px;
+    width: 100%;
+}
+#wjs_book .video_link{
+    display: block;
+}
+#wjs_book .video_link span{
+
+}
+#wjs_book .book_link{
+    border-bottom: 1px dashed #E92322;
+}
+
+/*产品区块*/
+.wjs_product{
+    background: #f0f0f0;
+    padding: 30px 0;
+}
+.wjs_product .wjs_product_tabs_box{
+    overflow: hidden;
+    width: 100%;
+}
+.wjs_product .nav-tabs li{
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.wjs_product .nav-tabs li a,
+.wjs_product .nav-tabs li a:hover{
+    background: none;
+    border: 0;
+    font-size: 14px;
+}
+.wjs_product .nav-tabs li.active a{
+    border: 0;
+    background: none;
+    border-bottom: 4px solid #E92322;
+}
+/*商品盒子*/
+.product_box{
+    margin-top: 15px;
+    height: 147px;
+    display: block;
+    box-shadow: 2px 2px 2px #d8d8d8;
+    color: #666;
+    position: relative;
+    background: #fff;
+}
+.product_box .red{
+    color: #E92322;
+}
+.product_box:hover{
+    color: #666;
+}
+.product_box.active::before{
+    font-family: itcast;
+    content: "\e915";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    font-size: 33px;
+}
+.product_box.active:hover{
+    color: #fff;
+}
+.product_box.active{
+    background: #E92322;
+    color: #fff;
+}
+.product_box .product_box_left{
+    height: 147px;
+    overflow: hidden;
+}
+.product_box .product_box_left h3{
+    font-size: 16px;
+}
+.product_box .product_box_left p{
+    margin-bottom: 0;
+    overflow: hidden;
+    height: 15px;
+}
+.product_box .product_box_left > div{
+    margin-bottom: 15px;
+}
+.product_box.active .product_box_left > div p:first-child{
+    opacity: 0.5;
+}
+.product_box .product_box_left .progress{
+    height: 10px;
+    margin: 5px;
+}
+
+
+    /*右侧的盒子*/
+.product_box .product_box_right{
+    width: 108px;
+    height: 147px;
+    float: right;
+    border-left: 1px dashed #ccc;
+    position: relative;
+}
+.product_box.active .product_box_right{
+    border-left: 1px dashed #c12e2a;
+}
+.product_box .product_box_right p{
+    margin-bottom: 0;
+    text-align: center;
+}
+.product_box .product_box_right p:first-child{
+    font-size: 44px;
+    margin-top: 20px;
+}
+.product_box .product_box_right p.font44{
+    font-size: 44px;
+    margin-top: 20px;
+}
+.product_box .product_box_right p.font44 sub{
+    font-size: 14px;
+    bottom: 0;
+}
+.product_box .product_box_right p:first-child sub{
+    font-size: 14px;
+    bottom: 0;
+}
+.product_box .product_box_right::before,
+.product_box .product_box_right::after{
+    width: 12px;
+    height: 12px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    position: absolute;
+    content: "";
+    left: -6px;
+}
+.product_box .product_box_right::before{
+    top: -6px;
+    box-shadow:0 -2px 2px 0 #d8d8d8 inset;
+}
+.product_box .product_box_right::after{
+    bottom: -6px;
+    box-shadow:0 2px 2px 0 #d8d8d8 inset;
+}
+/*工具提示*/
+.wjs_toolsTip{
+    text-align: center;
+    margin-top: 15px;
+}
+.wjs_toolsTip span{
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 16px;
+    display: inline-block;
+}
+.wjs_toolsTip span.tipRed{
+    border: 1px solid red;
+    color: red;
+}
+.wjs_toolsTip span.tipGreen{
+    border: 1px solid green;
+    color: green;
+}
+
+/*新闻区块*/
+.wjs_news{
+    padding: 20px 0;
+}
+.wjs_news .news_tit{
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.wjs_news .news_tit::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: -4px;
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+    border: 1px solid #ccc;
+}
+.wjs_news .nav-tabs{
+    border-bottom: 0;
+}
+.wjs_news .nav-tabs li{
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.wjs_news .nav-tabs li a{
+    background: none;
+    border: 0;
+    font-size: 14px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: #ccc;
+    display: block;
+    margin-bottom: 50px;
+}
+.wjs_news .nav-tabs li:last-child a{
+    margin-bottom: 0;
+}
+.wjs_news .nav-tabs li a:hover{
+    background: #E92322;
+}
+.wjs_news .nav-tabs li.active a{
+    border: 0;
+    background: #E92322;
+}
+/*通过媒体查询来设置 在小屏幕设备一下 去除下边距  同时加上*/
+@media screen and (max-width: 992px) {
+    .wjs_news .nav-tabs li a{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .wjs_news .nav-tabs li{
+        width: 25%;
+    }
+}
+
+
+
+/*虚线*/
+.wjs_news .pos_relative{
+    position: relative;
+}
+.wjs_news .news_line{
+    border-right: 1px dashed #ccc;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 66px;
+}
+.wjs_news .wjs_icon{
+    font-size: 30px;
+    color: #fff;
+}
+.wjs_news .wjs_icon_new01::before{
+    content: "\e90e";
+}
+.wjs_news .wjs_icon_new02::before{
+    content: "\e90f";
+}
+.wjs_news .wjs_icon_new03::before{
+    content: "\e910";
+}
+.wjs_news .wjs_icon_new04::before{
+    content: "\e911";
+}
+.wjs_news .news_con{
+    list-style: none;
+    font-size: 14px;
+}
+.wjs_news .news_con li{
+    padding-top: 30px;
+}
+
+/*合作伙伴*/
+.wjs_partner{
+
+}
+.wjs_partner h3{
+    font-size: 30px;
+}
+.wjs_partner ul{
+    list-style: none;
+    width:990px;
+    /*max-width: 990px;*/
+}
+.wjs_partner ul li {
+    float: left;
+    padding: 0 20px;
+}
+.wjs_partner .wjs_icon_partner01::before{
+    font-size: 50px;
+    content:"\e946";
+}

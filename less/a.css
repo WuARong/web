@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*----------变量-------*/
+a:hover {
+  color: #E92322;
+}
+/*----------mixin 混入------*/
+.red {
+  color: red;
+}
+.font14 {
+  font-size: 14px;
+}
+.redFont14 {
+  color: red;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*-------嵌套---------*/
+.wjs_partner > div {
+  color: #E92322;
+}
+.wjs_partner h3 {
+  font-size: 30px;
+  color: #E92322;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.wjs_partner ul {
+  list-style: none;
+  width: 990px;
+}
+.wjs_partner ul li {
+  float: left;
+  padding: 0 20px;
+}
+.wjs_partner ul li a {
+  text-decoration: none;
+  /*衔接当前元素*/
+}
+.wjs_partner ul li a:hover {
+  color: #fff;
+}
+/*-----------------import----------------导入*/
+/*省略了后缀*/
+a {
+  color: #333333;
+}
+/*--------------------函数-----------*/
+a {
+  background: #1a1a1a;
+  color: #e6e6e6;
+  border: 1px solid #999999;
+}
